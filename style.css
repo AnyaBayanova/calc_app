@@ -1,0 +1,71 @@
+.calculator {
+    margin: 10px auto;
+    width: 240px;
+    height: 440px;
+    border: 1px solid #000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 18px;
+    background-color: rgb(70, 70, 70);
+    border: 5px solid rgb(51, 51, 51);
+    border-radius: 15px;
+}
+
+.screen {
+    height: 50px;
+    padding: 10px;
+    background: whitesmoke;
+    margin-bottom: 14px;
+    border: 5px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.screen p {
+    height: 50px;
+    width: 210px;
+    text-align: right;
+    font-size: 2.7rem;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "crear dot plus"
+    "minus multiply divide"
+    "nine eight seven"
+    "six five four"
+    "three two one"
+    "zero e equal";
+    grid-gap: 5px;
+    justify-items: center;
+}
+
+.btn {
+    background-color: rgb(173, 173, 173);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    user-select: none;
+    color: azure;
+    border-radius: 10px;
+    border: 2px solid rgb(105, 105, 105);
+}
+
+.btn.dif-bg {
+    background: rgb(182, 72, 255);
+    border: 2px solid rgb(121, 48, 170);
+}
+
+.btn:hover {
+    filter: brightness(120%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+}
+
